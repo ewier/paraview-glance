@@ -1,2 +1,0 @@
-formats supported by Glance: https://kitware.github.io/glance/doc/readers.html
-
