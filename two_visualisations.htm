@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      .iframe-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+  
+      .iframe-container iframe {
+        width: 50%;
+        height: 900px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <title>ParaView Glance Project Part 1 - test</title>
+  </head>
+  <body>
+    <!-- <p>PVGlance test</p> -->
+    <div class="iframe-container">
+    <script>
+        var app = "https://kitware.github.io/paraview-glance/app";
+        var datadir = "https://raw.githubusercontent.com/ewier/paraview-glance/main/files/";
+        var file_blood = "blood.vtkjs";
+        var file_dambreak = "animated_dambreak_test.vtkjs.zip";
+
+        document.write("<iframe src='" + app + "?name=" + file_blood + "&url=" + datadir + file_blood + "' id='iframe' frameborder='0'></iframe>");
+        document.write("<iframe src='" + app + "?name=" + file_blood + "&url=" + datadir + file_blood + "' id='iframe' frameborder='0'></iframe>");
+    </script>
+    </div>
+  </body>
+</html>
